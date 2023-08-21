@@ -1,0 +1,22 @@
+{
+  "namespace": "example",
+  "type": "record",
+  "name": "ExampleObject1",
+  "fields": [
+    {
+      "name": "simpleString",
+      "type": "string"
+    },
+    {
+      "name": "stringList",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "string"
+        }
+      ],
+      "default": null
+    }
+  ]
+}

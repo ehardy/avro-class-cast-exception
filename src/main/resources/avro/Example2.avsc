@@ -1,0 +1,28 @@
+{
+  "namespace": "example",
+  "type": "record",
+  "name": "ExampleObject2",
+  "fields": [
+    {
+      "name": "simpleString",
+      "type": {
+        "type": "string",
+        "avro.java.string": "String"
+      }
+    },
+    {
+      "name": "stringList",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "avro.java.string": "String"
+          }
+        }
+      ],
+      "default": null
+    }
+  ]
+}
